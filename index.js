@@ -1,22 +1,22 @@
-function takeANumber(currentLine, name){
-  currentLine.push(name);
-  return `Welcome, ${name}. You are number ${currentLine.length} in line.`;
+function takeANumber(line, name){
+  line.push(name);
+  return `Welcome, ${name}. You are number ${line.length} in line.`;
 }
 
 
-function nowServing(currentLine){
-  if(currentLine.length === 0){
+function currentLine(line){
+  if(line.length === 0){
     return "There is nobody waiting to be served!"
   }else {
     var string="The line is currently: ";
-    currentLine.forEach(function (element,index){
-      if(index != (currentLine.length-1)){
-        string = string + `${index +1}. ${currentLine[index]}, `
+    line.forEach(function (element,index){
+      if(index != (line.length-1)){
+        string = string + `${index +1}. ${line[index]}, `
       }else{
-        string = string + `${index +1}. ${currentLine[index]}`
+        string = string + `${index +1}. ${line[index]}`
       }
     })
-    currentLine = currentLine.shift();
+    line = line.shift();
   }
   return string
 }
