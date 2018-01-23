@@ -9,6 +9,6 @@ function nowServing(line){
   }else {
     var firstInLine = line[0];
     line = line.shift();
-    return firstInLine;
+    return `Currently serving ${firstInLine};
   }
 }
