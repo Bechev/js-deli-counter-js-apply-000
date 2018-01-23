@@ -16,9 +16,9 @@ function nowServing(line){
 
 function currentLine(line){
   if(line.length === 0){
-    return "There is nobody waiting to be served!"
+    return "The line is currently empty"
   }else {
-    var string="The line is currently empty ";
+    var string="The line is currently: ";
     line.forEach(function (element,index){
       if(index != (line.length-1)){
         string = string + `${index +1}. ${line[index]}, `
