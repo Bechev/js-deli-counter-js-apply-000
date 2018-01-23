@@ -11,12 +11,11 @@ function nowServing(currentLine){
     var string="The line is currently: ";
     currentLine.forEach(function (element,index){
       if(index != (currentLine.length-1)){
-        string = string + `${index +1}. ${currentLine[index]}, ` 
+        string = string + `${index +1}. ${currentLine[index]}, `
       }else{
         string = string + `${index +1}. ${currentLine[index]}`
       }
     })
     currentLine = currentLine.shift();
-    
   }
 }
