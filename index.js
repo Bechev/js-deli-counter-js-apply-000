@@ -18,4 +18,5 @@ function nowServing(currentLine){
     })
     currentLine = currentLine.shift();
   }
+  return string
 }
