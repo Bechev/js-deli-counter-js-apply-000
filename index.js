@@ -10,4 +10,5 @@ function nowServing(line){
     var firstInLine = line[0];
     line = line.shift();
     return firstInLine;
+  }
 }
