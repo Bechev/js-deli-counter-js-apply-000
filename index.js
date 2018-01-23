@@ -1,3 +1,3 @@
-function katzDeliLine(currentLine, name){
+function takeANumber(currentLine, name){
   return currentLine.length;
 }
