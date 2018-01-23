@@ -12,3 +12,21 @@ function nowServing(line){
     return `Currently serving ${firstInLine}.`;
   }
 }
+
+
+function currentLine(line){
+  if(line.length === 0){
+    return "There is nobody waiting to be served!"
+  }else {
+    var string="The line is currently empty ";
+    line.forEach(function (element,index){
+      if(index != (line.length-1)){
+        string = string + `${index +1}. ${line[index]}, `
+      }else{
+        string = string + `${index +1}. ${line[index]}`
+      }
+    })
+    line = line.shift();
+  }
+  return string
+}
